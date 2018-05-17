@@ -15,7 +15,7 @@ services:
         build:
             context: .
             dockerfile: gunicorn.dockerfile
-        container_name: 'gunicorn_3_workers'
+        container_name: 'gunicorn_multiple'
         volumes:
             - ./py:/app/py
         links:
@@ -108,6 +108,7 @@ services:
             - ./store/static/files:/static:ro
         links:
             - gunicorn
+            - gunicorn_multiple
             - replica_gunicorn_1
             - replica_gunicorn_2
             - replica_gunicorn_3

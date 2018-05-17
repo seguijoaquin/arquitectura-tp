@@ -3,5 +3,5 @@
   "graphitePort": 2003,
   "port": 8125,
   "flushInterval": 1000,
-  "deleteIdleStats": false
+  "deleteIdleStats": true
 }

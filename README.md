@@ -21,9 +21,9 @@ sudo docker-compose stop <container>
 
 - Nginx
 
-- 4 x Aplicacion Node.js
+- 4 x Aplicacion Node.js (1 standalone y 3 tras loadbalancer)
 
-- 4 x Aplicacion Flask + Gunicorn (1 worker)
+- 4 x Aplicacion Flask + Gunicorn (1 worker) (1 standalone y 3 tras loadbalancer)
 
 - Aplicacion Flask + Gunicorn (3 workers)
 
