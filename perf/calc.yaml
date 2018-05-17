@@ -53,7 +53,7 @@ config:
       arrivalRate: 5
 
 scenarios:
-  - name: Calc (/calc/<int>)
+  - name: Calc (/calc)
     flow:
       - get:
-          url: '/calc/1000000'
+          url: "/calc"

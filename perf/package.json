@@ -5,11 +5,6 @@
   "main": "index.js",
   "scripts": {
     "artillery": "artillery",
-    "node_test": "artillery run root.yaml -e node",
-    "node_replicated_test": "artillery run root.yaml -e node_replicated",
-    "gunicorn_test": "artillery run root.yaml -e gunicorn",
-    "gunicorn_multiple_test": "artillery run root.yaml -e gunicorn_multiple",
-    "gunicorn_replicated_test": "artillery run root.yaml -e gunicorn_replicated",
     "scenario": "./run-scenario.sh"
   },
   "author": "",

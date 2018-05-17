@@ -23,9 +23,9 @@ def db():
     return 'DB says Hi'
 
 # Recibe un numero entero por parametro, genera una lista de elementos, la ordena y los devuelve
-@app.route('/calc/<int:len>')
-def calc(len):
-    for i in len:
+@app.route('/calc')
+def calc():
+    for _ in range(10000000):
         pass
     return 'OK'
 

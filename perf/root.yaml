@@ -57,20 +57,4 @@ scenarios:
     flow:
       - get:
           url: '/'
-  - name: DB (/db)
-    flow:
-      - get:
-          url: '/db'
-  - name: Calc (/calc/<int>)
-    flow:
-      - get:
-          url: '/calc/1000000'
-  - name: Light static (63 kb)
-    flow:
-      - get:
-          url: '/static/pic.jpg'
-  - name: Heavy static (2 Mb)
-    flow:
-      - get:
-          url: '/static/book.pdf'
 

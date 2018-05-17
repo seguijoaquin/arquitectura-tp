@@ -21,8 +21,8 @@ app.get('/db', (req,res) => {
 });
 
 // Recibe por parametro un entero y genera un ciclo de ese tamaño
-app.get('/calc/:len', (req,res) => {
-  for (let index = 0; index < req.params.len; index++) {
+app.get('/calc', (req,res) => {
+  for (let index = 0; index < 10000000; index++) {
   }
   res.send('OK');
 });

@@ -29,14 +29,75 @@ sudo docker-compose stop <container>
 
 ## Cómo medir carga
 
-Se utilizaron distintos escenarios predefinidos. Se generó carga con Artillery y se recolectaron los datos con Grafana + StatsD + Cadvisor
+Se utilizaron distintos escenarios predefinidos. Una vez levantados los containers, para medir carga sobre los mismos:
+
+```sh
+# Me muevo hasta el directorio de Artillery
+cd perf
+
+# Instalo dependencias 
+npm install
+
+# Ejecuto el escenario elegido 
+npm run scenario <scenario> <aplicacion>
+
+```
+
+## Escenarios
+Los distintos escenarios son
+
+### Root
+- Nombre: ``` root ```
+- Descripción: Endpoint sencillo tipo 'Hola mundo'
+
+### DB
+- Nombre: ``` db ```
+- Descripción: Endpoint lento y liviano
+
+### Calc
+- Nombre: ``` calc ```
+- Descripción: Genera un ciclo de 1.000.000 de operaciones
+
+### Light Static
+- Nombre: ``` light_static ```
+- Descripción: Sirve una foto de 63 kb
+
+### Heavy Static
+- Nombre: ``` heavy_static ```
+- Descripción: Sirve un archivo pdf de 2 Mb
+
+
+## Aplicaciones
+Los distintos entornos de aplicaciones son
+
+### Gunicorn
+- Entonrno: ``` gunicorn ```
+- Target: http://localhost:5555/gunicorn/
+
+### Gunicorn Multiple
+- Entonrno: ``` gunicorn_multiple ```
+- Target: http://localhost:5555/gunicorn_multiple/
+
+### Gunicorn Replicated
+- Entonrno: ``` gunicorn_replicated ```
+- Target: http://localhost:5555/gunicorn_replicated/
+
+### Node
+- Entorno: ``` node ```
+- Target: http://localhost:5555/node/
+
+### Node Replicated
+- Entorno: ``` node_replicated ```
+- Target: http://localhost:5555/node_replicated/
+
+
 
 ## Endpoints de interés
 
 ### Aplicacion Node.js 
 
 ```sh
-# index
+# Endpoint sencillo
 http://localhost:5555/node/
 
 # Endpoint lento y liviano
