@@ -1,0 +1,171 @@
+joaquin@macbeth:~/fiuba/arquitectura/tp/arquitectura-tp/perf$ npm run scenario light_static gunicorn_multiple 
+> perf@1.0.0 scenario /home/joaquin/fiuba/arquitectura/tp/arquitectura-tp/perf
+> ./run-scenario.sh "light_static" "gunicorn_multiple"
+
+
+> perf@1.0.0 artillery /home/joaquin/fiuba/arquitectura/tp/arquitectura-tp/perf
+> artillery "run" "-o" "myreport_light_static" "light_static.yaml" "-e" "gunicorn_multiple"
+
+Started phase 0 (RampUp), duration: 30s @ 01:05:34(-0300) 2018-05-24
+Report @ 01:05:44(-0300) 2018-05-24
+  Scenarios launched:  62
+  Scenarios completed: 62
+  Requests completed:  62
+  RPS sent: 6.39
+  Request latency:
+    min: 3
+    max: 27.9
+    median: 6.1
+    p95: 17
+    p99: 26.9
+  Codes:
+    200: 62
+
+Report @ 01:05:54(-0300) 2018-05-24
+  Scenarios launched:  121
+  Scenarios completed: 121
+  Requests completed:  121
+  RPS sent: 12.09
+  Request latency:
+    min: 3.6
+    max: 12.5
+    median: 6.3
+    p95: 9.1
+    p99: 12
+  Codes:
+    200: 121
+
+Report @ 01:06:04(-0300) 2018-05-24
+  Scenarios launched:  181
+  Scenarios completed: 181
+  Requests completed:  181
+  RPS sent: 18.05
+  Request latency:
+    min: 3.1
+    max: 11
+    median: 6.2
+    p95: 8.7
+    p99: 10.4
+  Codes:
+    200: 181
+
+Started phase 1 (Intensive), duration: 30s @ 01:06:05(-0300) 2018-05-24
+Report @ 01:06:14(-0300) 2018-05-24
+  Scenarios launched:  199
+  Scenarios completed: 199
+  Requests completed:  199
+  RPS sent: 19.9
+  Request latency:
+    min: 3.1
+    max: 8.9
+    median: 4.3
+    p95: 6.2
+    p99: 7.7
+  Codes:
+    200: 199
+
+Report @ 01:06:24(-0300) 2018-05-24
+  Scenarios launched:  201
+  Scenarios completed: 201
+  Requests completed:  201
+  RPS sent: 20.08
+  Request latency:
+    min: 3.1
+    max: 8.7
+    median: 4.3
+    p95: 6.4
+    p99: 7.6
+  Codes:
+    200: 201
+
+Report @ 01:06:34(-0300) 2018-05-24
+  Scenarios launched:  200
+  Scenarios completed: 200
+  Requests completed:  200
+  RPS sent: 20.04
+  Request latency:
+    min: 3.1
+    max: 38.4
+    median: 4.2
+    p95: 7
+    p99: 13.4
+  Codes:
+    200: 200
+
+Started phase 2 (Stop), duration: undefineds @ 01:06:35(-0300) 2018-05-24
+Started phase 3 (Light), duration: 30s @ 01:06:40(-0300) 2018-05-24
+Report @ 01:06:44(-0300) 2018-05-24
+  Scenarios launched:  36
+  Scenarios completed: 36
+  Requests completed:  36
+  RPS sent: 3.6
+  Request latency:
+    min: 3
+    max: 12.4
+    median: 6.2
+    p95: 10.8
+    p99: NaN
+  Codes:
+    200: 36
+
+Report @ 01:06:54(-0300) 2018-05-24
+  Scenarios launched:  50
+  Scenarios completed: 50
+  Requests completed:  50
+  RPS sent: 5.06
+  Request latency:
+    min: 4
+    max: 7.5
+    median: 5.8
+    p95: 7.3
+    p99: 7.5
+  Codes:
+    200: 50
+
+Report @ 01:07:04(-0300) 2018-05-24
+  Scenarios launched:  50
+  Scenarios completed: 50
+  Requests completed:  50
+  RPS sent: 5.05
+  Request latency:
+    min: 4
+    max: 19.6
+    median: 6.3
+    p95: 10
+    p99: 19.6
+  Codes:
+    200: 50
+
+Report @ 01:07:11(-0300) 2018-05-24
+  Scenarios launched:  29
+  Scenarios completed: 29
+  Requests completed:  29
+  RPS sent: 4.75
+  Request latency:
+    min: 4.2
+    max: 20.7
+    median: 5.6
+    p95: 15.1
+    p99: NaN
+  Codes:
+    200: 29
+
+All virtual users finished
+Summary report @ 01:07:11(-0300) 2018-05-24
+  Scenarios launched:  1129
+  Scenarios completed: 1129
+  Requests completed:  1129
+  RPS sent: 11.75
+  Request latency:
+    min: 3
+    max: 38.4
+    median: 5.1
+    p95: 8.3
+    p99: 12.4
+  Scenario counts:
+    Light static (63 kb): 1129 (100%)
+  Codes:
+    200: 1129
+
+Log file: myreport_light_static
+

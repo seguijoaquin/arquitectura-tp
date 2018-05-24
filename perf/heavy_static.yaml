@@ -53,7 +53,7 @@ config:
       arrivalRate: 5
 
 scenarios:
-  - name: Heavy static (2 Mb)
+  - name: Heavy static (20 Mb)
     flow:
       - get:
-          url: '/static/book.pdf'
+          url: '/static/BIG_FILE'

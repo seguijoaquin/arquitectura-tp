@@ -46,7 +46,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "id": null,
-  "iteration": 1526595501245,
+  "iteration": 1527108455941,
   "links": [],
   "panels": [
     {
@@ -345,11 +345,11 @@
           },
           {
             "selected": false,
-            "text": "gunicorn_3_workers",
-            "value": "gunicorn_3_workers"
+            "text": "gunicorn_multiple",
+            "value": "gunicorn_multiple"
           }
         ],
-        "query": "arquitectura-tp_gunicorn_1, arquitectura-tp_node_1, gunicorn_3_workers",
+        "query": "arquitectura-tp_gunicorn_1, arquitectura-tp_node_1, gunicorn_multiple",
         "type": "custom"
       }
     ]
@@ -386,5 +386,5 @@
   "timezone": "",
   "title": "Dashboard General",
   "uid": "KX5imQnik",
-  "version": 5
+  "version": 2
 }

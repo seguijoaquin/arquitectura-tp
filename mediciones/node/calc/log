@@ -1,0 +1,172 @@
+joaquin@macbeth:~/fiuba/arquitectura/tp/arquitectura-tp/perf$ npm run scenario calc node
+
+> perf@1.0.0 scenario /home/joaquin/fiuba/arquitectura/tp/arquitectura-tp/perf
+> ./run-scenario.sh "calc" "node"
+
+
+> perf@1.0.0 artillery /home/joaquin/fiuba/arquitectura/tp/arquitectura-tp/perf
+> artillery "run" "-o" "myreport_calc" "calc.yaml" "-e" "node"
+
+Started phase 0 (RampUp), duration: 30s @ 00:22:22(-0300) 2018-05-24
+Report @ 00:22:32(-0300) 2018-05-24
+  Scenarios launched:  82
+  Scenarios completed: 82
+  Requests completed:  82
+  RPS sent: 8.31
+  Request latency:
+    min: 20.1
+    max: 52.6
+    median: 36.3
+    p95: 48.3
+    p99: 51.9
+  Codes:
+    200: 82
+
+Report @ 00:22:42(-0300) 2018-05-24
+  Scenarios launched:  114
+  Scenarios completed: 114
+  Requests completed:  114
+  RPS sent: 11.43
+  Request latency:
+    min: 22.5
+    max: 52.2
+    median: 34.5
+    p95: 48.7
+    p99: 51.7
+  Codes:
+    200: 114
+
+Report @ 00:22:52(-0300) 2018-05-24
+  Scenarios launched:  174
+  Scenarios completed: 174
+  Requests completed:  174
+  RPS sent: 17.4
+  Request latency:
+    min: 22.4
+    max: 50.4
+    median: 31.8
+    p95: 43.8
+    p99: 49.6
+  Codes:
+    200: 174
+
+Started phase 1 (Intensive), duration: 30s @ 00:22:53(-0300) 2018-05-24
+Report @ 00:23:02(-0300) 2018-05-24
+  Scenarios launched:  199
+  Scenarios completed: 199
+  Requests completed:  199
+  RPS sent: 19.88
+  Request latency:
+    min: 19.1
+    max: 42
+    median: 19.7
+    p95: 29.6
+    p99: 36.1
+  Codes:
+    200: 199
+
+Report @ 00:23:12(-0300) 2018-05-24
+  Scenarios launched:  201
+  Scenarios completed: 200
+  Requests completed:  200
+  RPS sent: 20.1
+  Request latency:
+    min: 19.1
+    max: 36.6
+    median: 19.7
+    p95: 22.5
+    p99: 23.8
+  Codes:
+    200: 200
+
+Report @ 00:23:22(-0300) 2018-05-24
+  Scenarios launched:  200
+  Scenarios completed: 200
+  Requests completed:  200
+  RPS sent: 20.04
+  Request latency:
+    min: 19.1
+    max: 30.5
+    median: 19.6
+    p95: 22
+    p99: 25.4
+  Codes:
+    200: 200
+
+Started phase 2 (Stop), duration: undefineds @ 00:23:23(-0300) 2018-05-24
+Started phase 3 (Light), duration: 30s @ 00:23:28(-0300) 2018-05-24
+Report @ 00:23:32(-0300) 2018-05-24
+  Scenarios launched:  36
+  Scenarios completed: 37
+  Requests completed:  37
+  RPS sent: 3.61
+  Request latency:
+    min: 19.3
+    max: 50.4
+    median: 33.9
+    p95: 42.7
+    p99: NaN
+  Codes:
+    200: 37
+
+Report @ 00:23:42(-0300) 2018-05-24
+  Scenarios launched:  50
+  Scenarios completed: 50
+  Requests completed:  50
+  RPS sent: 5.06
+  Request latency:
+    min: 23.7
+    max: 46.9
+    median: 36.5
+    p95: 46.3
+    p99: 46.9
+  Codes:
+    200: 50
+
+Report @ 00:23:52(-0300) 2018-05-24
+  Scenarios launched:  50
+  Scenarios completed: 50
+  Requests completed:  50
+  RPS sent: 5.06
+  Request latency:
+    min: 21.1
+    max: 44.4
+    median: 30.9
+    p95: 40.9
+    p99: 44.4
+  Codes:
+    200: 50
+
+Report @ 00:23:58(-0300) 2018-05-24
+  Scenarios launched:  29
+  Scenarios completed: 29
+  Requests completed:  29
+  RPS sent: 4.75
+  Request latency:
+    min: 20.4
+    max: 66.8
+    median: 33.9
+    p95: 42.8
+    p99: NaN
+  Codes:
+    200: 29
+
+All virtual users finished
+Summary report @ 00:23:58(-0300) 2018-05-24
+  Scenarios launched:  1135
+  Scenarios completed: 1135
+  Requests completed:  1135
+  RPS sent: 11.8
+  Request latency:
+    min: 19.1
+    max: 66.8
+    median: 21.9
+    p95: 43.9
+    p99: 48.9
+  Scenario counts:
+    Calc (/calc): 1135 (100%)
+  Codes:
+    200: 1135
+
+Log file: myreport_calc
+
